@@ -97,6 +97,7 @@ function removeTodo(){
 function completeTodo() {
     completeBtn = document.querySelectorAll('.fa-check');
     completeBtn[completeBtn.length - 1].addEventListener('click', (e) => {
+        filterTodo(selectBtn.childNodes[0].innerHTML);
         e.target.parentElement.parentElement.classList.toggle('completed');
         e.target.parentElement.parentElement.classList.toggle('uncompleted');
     })
