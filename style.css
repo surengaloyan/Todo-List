@@ -93,6 +93,11 @@ header .add_pannel input#add_btn:hover
     background-color: #BFACC8;
 }
 
+header .add_pannel .select
+{
+    position: relative;
+}
+
 header .add_pannel .select #open_select
 {
     display: flex;
@@ -122,7 +127,7 @@ header .add_pannel .select .options
     margin-top: .5rem;
     border-radius: .5rem;
     width: 200px;
-    top: 32%;
+    top: 45px;
     z-index: 30;
     clip-path:polygon( 0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -239,10 +244,6 @@ header .add_pannel .select .options input:hover
 /*==========RESPONSIVE===========*/
 
 @media (max-width:581px) {
-    header .add_pannel .select .options
-    {
-        top: 36%;
-    }
     .todo_list 
     {
         width: 98%;
